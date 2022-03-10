@@ -1,10 +1,11 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
+import {NavItem} from "react-bootstrap";
 
 const Navigation = () =>{
     return(
         <div className={"navigation"}>
-            <NavLink exact to={"/"} activeClassName="nav-active">
+            <NavLink exact to={"/"} activeClassName="nav-active" >
                 Home
             </NavLink>
             <NavLink exact to={"/Feeder"} activeClassName="nav-active">
@@ -15,3 +16,5 @@ const Navigation = () =>{
 };
 
 export default Navigation;
+
+

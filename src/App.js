@@ -3,7 +3,7 @@ import Home from "./Pages/Home";
 import Feeder from "./Pages/Feeder";
 import NotFound from "./Pages/NotFound";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-
+//import Admin from "./Pages/Admin";
 
 function App() {
   return (
