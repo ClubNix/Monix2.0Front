@@ -5,10 +5,6 @@
 /.pnp
 .pnp.js
 
-# ide
-/.idea
-/.vsc
-
 # testing
 /coverage
 
