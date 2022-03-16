@@ -1,14 +1,14 @@
 .header {
-    top: 0;
-    background-color: black;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+  top: 0;
+  background-color: black;
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .logo {
-    height: 150px;
+  height: 150px;
 }
-
