@@ -1,0 +1,6 @@
+.nix {
+  position: absolute;
+  right: 15px;
+  height: 100px;
+  cursor: pointer;
+}
