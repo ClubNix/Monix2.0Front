@@ -1,5 +1,6 @@
 import React from "react";
 import Product, { ProductObject } from "../../Components/Products/Products";
+import "./Catalog.css"
 
 const Catalog: React.FC = () => {
   const products: ProductObject[] = [
@@ -48,9 +49,9 @@ const Catalog: React.FC = () => {
   ];
 
   return (
-    <div style={{ display: "flex", flexWrap: "wrap"}}>
-      {products.map((value) => (
-        <Product product={value} key={value.name} />
+    <div className="products-container">
+      {products.map((value, i) => (
+        <Product product={value} key={`${i}-${value.name}`} />
       ))}
     </div>
   );

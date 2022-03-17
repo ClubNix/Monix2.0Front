@@ -16,18 +16,14 @@ export type ProductProps = {
 // PENSEZ A COMMENTER
 const Product: React.FC<ProductProps> = ({ product }) => {
   return (
-    <Container className="product">
-      <Row>
-        <Col>
-          <img src={product.img} onClick={() => alert(`Et CLIC ${product.name}`)}/>
-        </Col>
-        <Col>
-          <Row>{product.name}</Row>
-          <Row>{`Stock : ${product.stock}`}</Row>
-          <Row>{`Price : ${product.price}`}</Row>
-        </Col>
-      </Row>
-    </Container>
+    <div className="product">
+      <img src={product.img} onClick={() => alert(`Et CLIC ${product.name}`)}/>
+      <div className="desc">
+        <span>{product.name}</span>
+        <span>{`Stock : ${product.stock}`}</span>
+        <span>{`Price : ${product.price}`}</span>
+      </div>
+    </div>
   );
 };
 
